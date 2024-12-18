@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.library.BookServiceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 1.649 s <<< FAILURE! -- in com.library.BookServiceTest
+com.library.BookServiceTest.testUpdateBook -- Time elapsed: 0.065 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:231)
+	at com.library.BookServiceTest.testUpdateBook(BookServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+com.library.BookServiceTest.testDeleteBook -- Time elapsed: 0.084 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.library.model.Book.isEmpty()" because the return value of "com.library.dao.BookDAO.getBookById(int)" is null
+	at com.library.BookServiceTest.testDeleteBook(BookServiceTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
