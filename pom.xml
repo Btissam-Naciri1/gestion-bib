@@ -46,8 +46,13 @@
         </execution>
     </executions>
 </plugin>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.9.1.2184</version>
+        </plugin>
 
-    
+
     </plugins>
 
 
@@ -62,6 +67,11 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.release>17</maven.compiler.release>
+          <sonar.projectKey>GestionBibliotheque</sonar.projectKey>
+          <sonar.host.url>http://localhost:9000</sonar.host.url>
+          <sonar.login>sqa_f4de8180138729100a3704c67a0d816d56d4c56c</sonar.login>
+
+
   </properties>
 
   <dependencies>
