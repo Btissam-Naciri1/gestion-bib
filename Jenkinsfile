@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/noussaibael/GestionBibliotheque.git'
+                git 'https://github.com/Btissam-Naciri1/gestion-bib.git'
             }
         }
         stage('Build') {
@@ -34,12 +34,12 @@ pipeline {
     }
     post {
         success {
-            emailext to: 'elboudalinoussaiba@gmail.com',
+            emailext to: 'bnaciri379@gmail.com',
                 subject: 'Build Success',
                 body: 'Le build a été complété avec succès.'
         }
         failure {
-            emailext to: 'elboudalinoussaiba@gmail.com',
+            emailext to: 'bnaciri379@gmail.com',
                 subject: 'Build Failed',
                 body: 'Le build a échoué.'
         }
